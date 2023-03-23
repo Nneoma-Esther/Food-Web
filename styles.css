@@ -1,0 +1,118 @@
+
+#enjoy {
+    font-family: "Amatic SC", sans-serif;
+    font-size:70px;
+}
+.about {
+    background-image: url('About-Us/about.jpg');
+    /* object-fit: cover; */
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.about_pad {
+    padding-right: 3rem;
+}
+
+@media(max-width: 767px) {
+    .about {
+        height: 20rem;
+    }
+
+    .about_pad {
+        padding-right: 1rem;
+    }
+
+    #enjoy {
+        font-size: 40px;
+    }
+}
+
+.book {
+    
+    right: 10%;
+    bottom: 10%;
+    background-color: white;
+    text-align: center;
+    width: 500px;
+    height: 80px;
+    margin: 0 0 0 -0px;
+}
+.chooseyum {
+    padding-top: 50px;
+    margin-top: 40px;
+}
+#why {
+    color: white;
+    font-weight: bold;
+}
+.whyy {
+    padding: 20px;
+}
+
+
+/*------------------------------
+Stats Section
+--------------------------------*/
+.stats-sec {
+    background-image:linear-gradient(
+        rgba(7, 7, 7, 0.45),rgba(7, 7, 7, 0.45)
+    ), url(stats-bg.jpg) ;
+    background-size: cover;
+    width: 100%;
+    padding: 30px;
+    font-size: 38px;
+    display: block;
+    font-weight: 700;
+    color: white;
+    background-attachment: fixed;
+    display:block;
+    /* height: 300px; */
+
+}
+
+/* .center {
+    text-align:center;
+    vertical-align: middle;
+    display: flex;
+    justify-content: cen;
+    padding-top: 150px;
+}
+ .number {
+    font-weight: bold;
+ } */
+
+ /*-----------------------------------------------
+ Menu Section 
+ --------------------------------------------------*/
+
+
+
+ /*-----------------------------Testimonials Sections
+ --------------------------------------------------------*/
+
+.testimony {
+    padding: 70px;
+    height: 500px;
+    background-color: #EEEEEE;
+    display: flex;
+    justify-content: center;
+}
+
+.testimony-img {
+}
+
+/*---------------------------Events Section
+---------------------------------------------------*/
+
+.description {
+
+}
+
+/*------------------------------------------CHefs Section
+------------------------------------------------------------*/
+
+.member-info {
+    background: #fff ;
+}
