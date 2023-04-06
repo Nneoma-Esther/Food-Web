@@ -1,20 +1,152 @@
+/*============= Header Section =================*/
+#nav-components {
+    position: relative;
+    color:#7F7F90;
+    font-family: 'Open Sans', sans-serif;
+}
+#nav-components.active, #nav-components:hover {
+    color: black !important;
+    font-family: 'Open Sans', sans-serif;
+}
+#nav-components::before {
+    content:"";
+    position: absolute;
+    display: block;
+    background-color:red;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    transition: width .3s ease-in-out;
+}
 
+#nav-components:hover::before, #nav-components.active::before {
+    width: 80%;
+}
+
+
+/* ======================Home Section ======================*/
+#home-sec {
+    background-color: #EEEEEE;
+    height: 680px;
+}
+#yummy {
+    font-family:sans-serif;
+    font-size:30px;
+    color: black;
+    font-weight: bold;
+}
+.home-pic {
+    display: flex;
+    padding-top: 50px;
+    padding-bottom:50px;
+}
 #enjoy {
     font-family: "Amatic SC", sans-serif;
     font-size:70px;
 }
-.about {
-    background-image: url('About-Us/about.jpg');
-    /* object-fit: cover; */
-    background-size: cover;
-    width: 100%;
-    height: 100%;
+
+
+
+/*=================About Us==================== */
+#about-us {
+    font-family: 'Amatic SC', cursive;
+    font-size: 50px;
+}
+#about-us-text {
+    font-family: 'Open Sans', sans-serif;
+}
+#about-us-list {
+    line-height: 29px;
+
 }
 
 .about_pad {
-    padding-right: 3rem;
+    background-image: url('About-Us/about.jpg');
+    background-size: cover;
+    /* width: 100%; */
+    min-height: 100%;
 }
 
+.play-btn {
+    font-size: 37px;
+    color: white;
+    position: absolute;
+    border: 1px solid red;
+    background-color: rgba(206, 18, 18, 0.918);
+    border-radius: 50%;
+    top: 41%;
+    left: 41%;
+    padding-right: 15px ;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    /* animation: animate 1.5s linear infinite;
+    opacity: 0; */
+}
+
+.video-box {
+    position:relative;
+}
+
+
+
+/*==============================Why Us Section==========================*/
+
+.why-us-icon {
+    font-size: 35px;
+    color: red;
+    border-radius: 50px;
+    background-color: rgba(206, 18, 18, 0.1);
+    display: flex;
+    justify-content: center;
+    width:64px;
+    height: 64px;
+    margin-bottom: 30px;
+    align-items:center;
+    margin: 0 auto;
+
+}
+.card-ish {
+    margin: 30px;
+}
+.why-us-section {
+    padding: 0 80px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+#why {
+    color: white;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+.why-box {
+    color: #fff;
+    padding: 30px;
+    background-color: #CE1212;
+    font-family: 'Open Sans', sans-serif;
+    display: block;
+    margin: 70px 0;
+}
+.why-boxs {
+    color: #212529;
+    font: 16px;
+    background-color: #FFFFFF;
+    Padding: 40px 30px;
+    margin: 80px 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.more-btn {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #FFFFFF4D;
+    
+}
+.card-head {
+    margin: 0px 0px 30px;
+}
 @media(max-width: 767px) {
     .about {
         height: 20rem;
@@ -22,6 +154,7 @@
 
     .about_pad {
         padding-right: 1rem;
+        min-height: 700px !important;
     }
 
     #enjoy {
@@ -30,89 +163,547 @@
 }
 
 .book {
-    
-    right: 10%;
-    bottom: 10%;
     background-color: white;
-    text-align: center;
-    width: 500px;
-    height: 80px;
-    margin: 0 0 0 -0px;
+    position: relative;
+    width: 80%;
+    height: 20%;
+    margin: 0 auto;
 }
 .chooseyum {
     padding-top: 50px;
     margin-top: 40px;
 }
-#why {
-    color: white;
-    font-weight: bold;
-}
+
+
 .whyy {
     padding: 20px;
 }
+.card-text {
+    color:#6C757D;
+    font-size: 15px;
+    padding-bottom: 10px;;
+}
 
 
-/*------------------------------
+
+/*====================================
 Stats Section
---------------------------------*/
+=====================================*/
 .stats-sec {
     background-image:linear-gradient(
         rgba(7, 7, 7, 0.45),rgba(7, 7, 7, 0.45)
     ), url(stats-bg.jpg) ;
     background-size: cover;
     width: 100%;
-    padding: 30px;
+    padding: 70px 0;
     font-size: 38px;
     display: block;
     font-weight: 700;
     color: white;
     background-attachment: fixed;
     display:block;
-    /* height: 300px; */
-
 }
 
-/* .center {
-    text-align:center;
-    vertical-align: middle;
-    display: flex;
-    justify-content: cen;
-    padding-top: 150px;
-}
- .number {
-    font-weight: bold;
- } */
+
+
 
  /*-----------------------------------------------
  Menu Section 
  --------------------------------------------------*/
+.section-header {
+    padding-top:80px;
+}
+.our-menu {
+    color: #7F7F90;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    margin: 0px 0px 8px;
+    
+
+}
+.head-menu {
+    color: #676775;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    padding-top: 40px;
+}
+.head-type {
+    color: #CE1212;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.check-yum {
+    font-family: "Amatic SC", sans-serif;
+    font-size: 50px;
+}
+.menu-components .nav-link {
+    color: #37373F;
+}
+.menu-components::before {
+    color:#37373F;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px 5px;
+}
+.tabtab .menu-components .nav-link.active{
+    color:#CE1212;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #FFFFFF;
+    border-top: none;
+    border-right:none;
+    border-left:none;
+    border-bottom: 2px solid red;
+}
+.menu-components:hover .nav-link{
+    color:#CE1212;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #FFFFFF;
+    border: none none inherit none !important;
+    border-bottom: 2px solid red;
+}
+
+
 
 
 
  /*-----------------------------Testimonials Sections
  --------------------------------------------------------*/
 
-.testimony {
-    padding: 70px;
-    height: 500px;
+.testimonial {
     background-color: #EEEEEE;
+}
+.tpic {
+    border: 5px solid white;
+    border-radius: 50%;
+    display: flex;
+    margin: 0 auto;
+}
+.nav-tabs {
     display: flex;
     justify-content: center;
 }
 
-.testimony-img {
+.test-text {
+    color: #7F7F90;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    margin: 0px 0px 8px;
+    display: flex;
+    justify-content: center;
+}
+.test-section {
+    padding-top: 80px;
+    padding-bottom: 120px;
+}
+.say-text {
+    font-family: "Amatic SC", sans-serif;
+    font-size: 48px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.test-p {
+    border-left: 3px solid rgb(190, 40, 40);
+    padding-left: 30px;
+}
+.testimonial-name {
+    color: #212529;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.testifier-job {
+    color: #6c757d;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    padding-bottom: 4px;
+}
+.star {
+    color: rgb(243, 179, 40)
+}
+.testimony {
+    font-style: italic;
+    padding-bottom: 15px;
+}
+.sayingabout-text{
+    color: red;
+    padding-left: 9px;
+}
+.quote {
+    color: red;
+    font-size: 25px;
 }
 
 /*---------------------------Events Section
 ---------------------------------------------------*/
 
-.description {
-
+.events-main-section {
+    padding-bottom: 30px;
 }
 
-/*------------------------------------------CHefs Section
+.event-1 {
+    background-image: linear-gradient(
+        rgba(7,7,7,0.45),rgba(7,7,7,0.45)
+    ), url(Events/events-1.jpg);
+    object-fit: cover;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    min-height: 600px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 5px;
+
+
+}
+.event-2 {
+    background-image: linear-gradient(
+        rgba(7,7,7,0.45),rgba(7,7,7,0.45)
+    ), url(Events/events-2.jpg);
+    object-fit: cover;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    min-height: 600px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 5px;
+}
+.event-3 {
+    background-image: linear-gradient(
+        rgba(7,7,7,0.45),rgba(7,7,7,0.45)
+    ), url(Events/events-3.jpg);
+    object-fit: cover;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    min-height: 600px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 5px;
+    
+}
+.events-text {
+    padding-top: 75px;
+    color: #7F7F90;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+.share-text {
+    font-family: "Amatic SC", sans-serif;
+    font-size: 48px;
+}
+.moments-text {
+    color: red;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.event-1-type, .event-2-type, .event-3-type {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+.price {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+    color: #FFFFFF;
+}
+.description {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color:#FFFFFFE6;
+}
+
+
+/* @media (max-width: 1000px) {
+    .hide-small {
+        display: none;
+    }
+} */
+
+/*------------------------------------------Chefs Section
 ------------------------------------------------------------*/
 
 .member-info {
-    background: #fff ;
+    background: #ffffff;
+    min-height: 450px;
+    position: relative;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+}
+
+.zoom-box:hover {
+    transform: scale(1.07);
+  }
+.chef-img {
+    clip-path: polygon(100% 0%, 0% 0% , 0.00% 94.44%, 1.00% 94.41%, 2.00% 94.31%, 3.00% 94.16%, 4.00% 93.94%, 5.00% 93.68%, 6.00% 93.38%, 7.00% 93.05%, 8.00% 92.71%, 9.00% 92.36%, 10.00% 92.02%, 11.00% 91.70%, 12.00% 91.41%, 13.00% 91.17%, 14.00% 90.97%, 15.00% 90.83%, 16.00% 90.76%, 17.00% 90.74%, 18.00% 90.80%, 19.00% 90.92%, 20.00% 91.09%, 21.00% 91.32%, 22.00% 91.60%, 23.00% 91.91%, 24.00% 92.25%, 25.00% 92.59%, 26.00% 92.94%, 27.00% 93.27%, 28.00% 93.58%, 29.00% 93.86%, 30.00% 94.09%, 31.00% 94.27%, 32.00% 94.39%, 33.00% 94.44%, 34.00% 94.43%, 35.00% 94.35%, 36.00% 94.22%, 37.00% 94.02%, 38.00% 93.77%, 39.00% 93.48%, 40.00% 93.16%, 41.00% 92.82%, 42.00% 92.48%, 43.00% 92.13%, 44.00% 91.80%, 45.00% 91.50%, 46.00% 91.24%, 47.00% 91.03%, 48.00% 90.87%, 49.00% 90.77%, 50.00% 90.74%, 51.00% 90.77%, 52.00% 90.87%, 53.00% 91.03%, 54.00% 91.24%, 55.00% 91.50%, 56.00% 91.80%, 57.00% 92.13%, 58.00% 92.48%, 59.00% 92.82%, 60.00% 93.16%, 61.00% 93.48%, 62.00% 93.77%, 63.00% 94.02%, 64.00% 94.22%, 65.00% 94.35%, 66.00% 94.43%, 67.00% 94.44%, 68.00% 94.39%, 69.00% 94.27%, 70.00% 94.09%, 71.00% 93.86%, 72.00% 93.58%, 73.00% 93.27%, 74.00% 92.94%, 75.00% 92.59%, 76.00% 92.25%, 77.00% 91.91%, 78.00% 91.60%, 79.00% 91.32%, 80.00% 91.09%, 81.00% 90.92%, 82.00% 90.80%, 83.00% 90.74%, 84.00% 90.76%, 85.00% 90.83%, 86.00% 90.97%, 87.00% 91.17%, 88.00% 91.41%, 89.00% 91.70%, 90.00% 92.02%, 91.00% 92.36%, 92.00% 92.71%, 93.00% 93.05%, 94.00% 93.38%, 95.00% 93.68%, 96.00% 93.94%, 97.00% 94.16%, 98.00% 94.31%, 99.00% 94.41%, 100.00% 94.44%);
+}
+.chef-name {
+    font-family: 'Open Sans', sans-serif;
+    color: #37373F;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.social {
+    position: absolute;
+    display: flex;
+    right: -4rem;
+    top: 1rem;
+
+    padding: 0 1rem;
+    flex-direction: column;
+    justify-content: space-around;
+    opacity: .7;
+    min-height: 150px;
+    background-color: rgba(255, 255, 255, 0.747);
+    z-index: 999;
+    transition: all .3s ease-in-out;
+    transition-delay: .3s;
+}
+
+.member-info:hover .social {
+    right: 1rem;
+    
+}
+
+.social a {
+    color: rgba(55, 55, 63, 0.9);
+    line-height: 0;
+    text-align: center;
+    font-size: 1rem;
+    /* position: absolute; */
+}
+.chef-type {
+    color: #21252966;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+.chef-describe {
+    color: #212529B3;
+    padding-left:20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    font-size: 14px;
+    line-height: 25px;;
+}
+.chef-section {
+    padding-top: 75px;
+    color: #7F7F90;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+.prof-text {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: red;
+}
+.our-prof-chef {
+    font-family: "Amatic SC", sans-serif;
+    font-size: 48px;
+}
+.each-chef {
+    background-color: white;
+}
+.prof-chefs-sect {
+    min-height: 650px;
+    padding-bottom: 150px;
+
+}
+.chef-describe-div {
+    display: flex;
+    align-items: center;
+}
+
+/*====================Book Your Stay Section=================*/
+.book-a-tabh {
+    color: #7F7F90;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+.book-your-stay-div {
+    background-color: rgba(55,55,63,0.04);
+}
+.book-your-st {
+    font-family: "Amatic SC", sans-serif;
+    font-size: 48px;
+    /* padding-bottom: -50px; */
+}
+.your-stay {
+    color: red;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.book-a-stay-img {
+    min-height: 500px;
+    background-image: url('reservation.jpg');
+    background-size: cover;
+}
+.bookast-item {
+    background-color: #FFFFFF;
+    padding: 10px 13px;
+    margin: 10px 13px;
+    padding-left: 20px;
+}
+.bookast-items {
+    padding-top: 100px;
+    padding-left: 5px;
+    padding-right: 80px;
+    border: none;
+}
+  .bookast-message {
+    padding-top: 10px;
+    padding-right: 12px;
+    padding-left: 1px;
+    
+}
+.book-stay-btn {
+    margin-top: 20px;
+    margin-left: 32%;
+    padding-right: 60px;
+    padding-left: 60px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+
+/*===============================Gallery Section=================*/
+.gallery-text {
+    color: #7F7F90;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+.check-our-gallery-text {
+    font-family: "Amatic SC", sans-serif;
+    font-size: 48px;
+}
+.our-gallery-text {
+    color: red;
+    padding-left: 8px;
+}
+.gallery-sect {
+    padding-bottom: 80px;
+}
+.gallery-sect .owl-item.active.center {
+    border: 7px solid red;
+}
+/*=========================Contact-Us Section============================*/
+
+.contact-us-section {
+    padding-top: 75px;
+}
+.contact-text {
+    color: #7F7F90;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+.NHCU {
+    font-family: "Amatic SC", sans-serif;
+    font-size: 48px;
+}
+.contact-us-text {
+    color: red;
+    padding-left: 8px;
+}
+.contact-us-items {
+    padding-top: 20px;
+}
+.contact-icon {
+    border-radius: 50%;
+    margin-right: 15px;
+    margin-left: 30px;
+    font-size: 25px;
+    background-color: #CE1212; 
+    padding: 8px 15px;
+    color: white;
+}
+.contact-us-item {
+    /* padding-top: 30px;
+    padding-bottom: 30px; */
+    background-color: #F4F4F4;
+    display: flex;
+    align-items: center;
+    min-height: 150px
+}
+.contact-top-item {
+    color: #6C757D;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+.contact-bottom-item {
+    color: #212529;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+.contact-bottom-item-unique {
+    font-size: 16px;
+    color: #212529;
+    font-family: 'Open Sans', sans-serif;
+}
+.contact-bottom-unique-bold {
+    font-weight: bold;
+}
+.contact-form {
+    background-color: #FFFFFF;
+}
+.contact-btn {
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-top: 30px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+
+}
+.contact-form-item {
+    background-color: #FFFFFF;
+}
+
+/*==========================Footer Section===============================*/
+
+.follow-us-icon {
+    border-radius: 50%;
+    padding: 8px 10px;
+    border: 1px solid #525151b3;
+}
+.footer-section {
+    background-color: #1F1F24;
+}
+.footer-up {
+    color: #FFFFFFB3;
+    border-bottom: 1px solid #615f5fb3;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+.footer-up-head {
+    font-weight: bold;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+.all-rights {
+    color:#FFFFFFB3;
+    font-size: 14px;
+}
+.design {
+    color:#FFFFFFB3;
+    font-size: 13px;
+}
+.yum {
+    font-weight: bold;
+}
+.boot {
+    color: #FFFFFF;
+    padding-left: 5px;
 }
