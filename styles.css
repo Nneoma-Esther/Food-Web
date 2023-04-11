@@ -72,16 +72,29 @@
     color: white;
     position: absolute;
     border: 1px solid red;
-    background-color: rgba(206, 18, 18, 0.918);
+    background-color: rgba(236, 97, 97, 0.918);
     border-radius: 50%;
-    top: 41%;
-    left: 41%;
+    top: calc(50% - 44px);
+    left: calc(50% - 53px);
     padding-right: 15px ;
     padding-left: 15px;
     padding-bottom: 5px;
     padding-top: 5px;
     /* animation: animate 1.5s linear infinite;
     opacity: 0; */
+}
+
+.circle-border::before {
+    content: "";
+    background-color:rgba(175, 73, 73, 0.925);
+    padding: 50px;
+    border:1px solid rgba(175, 73, 73, 0.925);
+    position: absolute;
+    top: calc(50% - 60px);
+    left: calc(50% - 68px);
+    border-radius: 50%;
+    
+
 }
 
 .video-box {
